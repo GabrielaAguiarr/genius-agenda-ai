@@ -9,7 +9,10 @@ import json
 import os
 
 
-TOKEN = "8937557124:AAESxs1KmP9AxxD8YtwhocMmlCQjt5Kyj3s"
+
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+if not TOKEN:
+    raise ValueError("Token do Telegram não configurado!")
 FUSO = ZoneInfo("America/Recife")
 
 ARQUIVO_LEMBRETES = "lembretes_enviados.json"
