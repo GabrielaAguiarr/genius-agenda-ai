@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+# Genius Agenda AI - arquivos privados
+token.json
+chat_id.json
+lembretes_enviados.json
+credentials/
+credentials.json
+credentials.json.json
+client_secret*.json
+google_credentials*.json
+.env.*
